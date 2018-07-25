@@ -39,6 +39,7 @@ block content
                    
 //- ABOUT ME -------------------------------------------
 block aboutMe
+
     div(class = "columns")
       div(class = "column is-2")
       div(class = "column is-8")
@@ -52,90 +53,82 @@ block aboutMe
             |whether it's homework or something unrelated to school. I'm very curious about different 
             |fields, not just my own (CSE). For example, I like reading philosophy on my free time. I'm also always willing to 
             |learn different things, I like to challenge myself with hard tasks. I learn from mistakes.
+          br
+          br
+          section(class = "sections")
+             |Skills
 
-          span(class = "sections") 
-            |Skills
-          div
-            div(class = "columns")
-              
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; &nbsp;  C/C++
-                  br
-                  img(src = "/images/C++.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; &nbsp; &nbsp; SQL
-                  br
-                  img(src = "/images/sql.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient   
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp;&nbsp; &nbsp;  HTML
-                  br
-                  img(src = "/images/HTML.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; &nbsp; &nbsp;  CSS
-                  br
-                  img(src = "/images/CSS.png" )
-                  center
-                    span(class = "skill-level")
-                      |Proficient 
+          div(class ="columns")
+            div(class = "column is-1")
+            div(class = "column is-3")
+              center
+                ul
+                  li(class = "skill" id = "javascript" onmouseover = "javascript()" onmouseout = "normal()") JavaScript
+                  li(class = "skill" id = "python"  onmouseover = "python()" onmouseout = "normal()") Python
+                  li(class = "skill" id = "C++" onmouseover = "Cmas()" onmouseout = "normal()") C++
+                  li(class = "skill" id = "C"  onmouseover = "C()" onmouseout = "normal()") C
+                  li(class = "skill" id = "java"  onmouseover = "java()" onmouseout = "normal()") Java
+                  li(class = "skill" id = "sql"  onmouseover = "sql()" onmouseout = "normal()") SQL
+                  li(class = "skill" id = "css"  onmouseover = "css()" onmouseout = "normal()") CSS
+                  li(class = "skill" id = "html"  onmouseover = "html()" onmouseout = "normal()") HTML
+                  li(class = "skill" id = "node" onmouseover = "node()" onmouseout = "normal()") NodeJS
+            div(class = "column is-1")
+            div(class = "column is-6")
+              center
+                div
+                  img(id = "skill-level" src = "/images/inst.png")
+                  center(style = "background-color: black; color: white; width: 100%; ")
+                    |&#x25C1 Proficiency &#x25B7
+            div(class = "column is-1")
+            
+           
 
-            div(class = "columns")
-              
+          br
+          br
+          br
+          br
+          div(style = "padding: 20px;")
+            h1(style = "font-weight: bold; font-size: 25px;")
+                |Revelant Experience
+            div(class = "columns" style = "padding-top: 30px;")
               div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; &nbsp; Python
-                  br
-                  img(src = "/images/python.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient
+                center
+                  div(class = "caja")
+                    |COMPUTER SCIENCE TUTOR
+                    img(src = "images/PALS.jpg" style = "height: 295px; width: 400px;")
+                  div(class = "content-container")  
+                    button(class = "content")
+                      |More Info &#x25FF 
+                    
+                    div(class = "accordion-appear")
+                      h1(style = "font-weight: bold;") 
+                        |March 2017 - Present
+                      ul
+                        li •  Tutor students for Java, C/C++ (data structures and algorithms).
+                        li •  Encourage students to be involved at school to improve academic success.
+                        li •	Prepare materials to lecture about 15-30 students.
+
+
               div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; JavaScript
-                  br
-                  img(src = "/images/javascript.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient   
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp;&nbsp;  Nodejs
-                  br
-                  img(src = "/images/nodejs.png")
-                  center
-                    span(class = "skill-level")
-                      |Proficient
-              div(class = "column")
-                div(class = "skill")
-                  div(class ="sLabel")
-                    |&nbsp; &nbsp;&nbsp;  Java
-                  br
-                  img(src = "/images/java.png" )
-                  center
-                    span(class = "skill-level")
-                      |Proficient               
-                  
+                center
+                  div(class = "caja")
+                    |FRONT-END DEVELOPER
+                    img(src = "images/ventureL.jpg" style = "height: 295px; width: 400px;")
+                  button(class = "content")
+                   |More Info &#x25FF 
+                
+                  div(class = "accordion-appear")
+                      h1(style = "font-weight: bold;") 
+                        |October 2017 - June 2018
+                      ul
+                        li •	Update 4 different school websites with new content, using HTML and CSS. 
+                        li •	Have worked on 2 projects which consisted of creating new websites with Drupal, CSS and HTML
+                        li •	Use of JavaScript to make animations. 
+
       div(class = "column is-2")
-      
+
+
+    
 
 
 //- FOOTER ---------------------------------------------- 
@@ -154,23 +147,24 @@ block footer
           div(class = "columns")
             div(class = "column is-4")
             div(class = "column")
-              span(class = "icon is-large") 
-                i(class = "fab fa-linkedin fa-3x")
+              span(class = "icon is-large")
+                a(class = "linko" href = "https://www.linkedin.com/in/jesus-sanchez-macias-01614812a/")
+                  i(class = "fab fa-linkedin fa-3x")
 
             div(class = "column")
               span(class = "icon is-large") 
-                i(class = "fab fa-github-square fa-3x")
+               a(class = "linko" href = "https://github.com/jsanchez254")
+                 i(class = "fab fa-github-square fa-3x")
 
             div(class = "column")
               span(class = "icon is-large") 
-                i(class = "fas fa-envelope-square fa-3x")
+               a(class = "linko" href = "jsanchez254@ucmerced.edu")
+                  i(class = "fas fa-envelope-square fa-3x")
 
             div(class = "column is-4")
         div(class = "column is-2")
 
 
-   
-    
 
 
 
