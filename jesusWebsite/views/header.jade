@@ -6,45 +6,49 @@ block content
       nav(class = "navbar")
       
           div(class = "navbar-end")
-            a(class = "navbar-item")
+            a(class = "navbar-item" href = "#home")
               span(class = "icon is-medium") 
                 i(class = "fas fa-home")
               |Home
 
-            a(class = "navbar-item")
+            a(class = "navbar-item" href = "#aboutMe")
               span(class = "icon is-medium") 
                 i(class = "fas fa-book-open")
               |About Me
 
-            a(class = "navbar-item")
+            a(class = "navbar-item" href = "#skills")
               span(class = "icon is-medium") 
                 i(class = "fas fa-bolt")
               |Skills
-              
-            a(class = "navbar-item")
+ 
+            a(class = "navbar-item" href = "#projects")
               span(class = "icon is-medium") 
                 i(class = "fas fa-project-diagram")
               |Projects
 
-            a(class = "navbar-item")
+            a(class = "navbar-item" href = "#contactMe")
               span(class = "icon is-medium") 
                 i(class = "fas fa-envelope")
               |Contact Me
-    div(class = "hero-body")
+    div(class = "hero-body" id = "home")
+
       <center class = "nombre">Jesus Sanchez</center>
       center
         div(class = "letritas")
           br
-          |Hello There
-                   
+          |Always curious and excited to learn new cool
+          br
+          |programming stuff
+    
 //- ABOUT ME -------------------------------------------
 block aboutMe
-
+    span(id = "aboutMe")
     div(class = "columns")
       div(class = "column is-2")
       div(class = "column is-8")
         div(class = "box")
           span(class = "sections") 
+            br
             |About Me
           p
             |I am a very responsible and motivated individual. I'm very friendly and am always 
@@ -53,6 +57,8 @@ block aboutMe
             |whether it's homework or something unrelated to school. I'm very curious about different 
             |fields, not just my own (CSE). For example, I like reading philosophy on my free time. I'm also always willing to 
             |learn different things, I like to challenge myself with hard tasks. I learn from mistakes.
+            span(id = "skills")
+          br
           br
           br
           section(class = "sections")
@@ -62,21 +68,21 @@ block aboutMe
             div(class = "column is-1")
             div(class = "column is-3")
               center
-                ul
-                  li(class = "skill" id = "javascript" onmouseover = "javascript()" onmouseout = "normal()") JavaScript
-                  li(class = "skill" id = "python"  onmouseover = "python()" onmouseout = "normal()") Python
-                  li(class = "skill" id = "C++" onmouseover = "Cmas()" onmouseout = "normal()") C++
-                  li(class = "skill" id = "C"  onmouseover = "C()" onmouseout = "normal()") C
-                  li(class = "skill" id = "java"  onmouseover = "java()" onmouseout = "normal()") Java
-                  li(class = "skill" id = "sql"  onmouseover = "sql()" onmouseout = "normal()") SQL
-                  li(class = "skill" id = "css"  onmouseover = "css()" onmouseout = "normal()") CSS
-                  li(class = "skill" id = "html"  onmouseover = "html()" onmouseout = "normal()") HTML
-                  li(class = "skill" id = "node" onmouseover = "node()" onmouseout = "normal()") NodeJS
+                ul(id = "skills")
+                  li(class = "skill active" id = "javascript" onclick = "javascript()" ) JavaScript
+                  li(class = "skill" id = "python"  onclick = "python()" ) Python
+                  li(class = "skill" id = "C++" onclick = "Cmas()" ) C++
+                  li(class = "skill" id = "C"  onclick = "C()" ) C
+                  li(class = "skill" id = "java"  onclick = "java()" ) Java
+                  li(class = "skill" id = "sql"  onclick = "sql()" ) SQL
+                  li(class = "skill" id = "css"  onclick = "css()" ) CSS
+                  li(class = "skill" id = "html"  onclick = "html()" ) HTML
+                  li(class = "skill" id = "node" onclick = "node()" ) NodeJS
             div(class = "column is-1")
             div(class = "column is-6")
               center
                 div
-                  img(id = "skill-level" src = "/images/inst.png")
+                  img(id = "skill-level" src = "/images/javaScript.png")
                   center(style = "background-color: black; color: white; width: 100%; ")
                     |&#x25C1 Proficiency &#x25B7
             div(class = "column is-1")
@@ -94,7 +100,8 @@ block aboutMe
               div(class = "column")
                 center
                   div(class = "caja")
-                    |COMPUTER SCIENCE TUTOR
+                    div(class = "revelant-title")
+                        |COMPUTER SCIENCE TUTOR
                     img(src = "images/PALS.jpg" style = "height: 295px; width: 400px;")
                   div(class = "content-container")  
                     button(class = "content")
@@ -112,7 +119,8 @@ block aboutMe
               div(class = "column")
                 center
                   div(class = "caja")
-                    |FRONT-END DEVELOPER
+                    div(class = "revelant-title")
+                      |FRONT-END DEVELOPER
                     img(src = "images/ventureL.jpg" style = "height: 295px; width: 400px;")
                   button(class = "content")
                    |More Info &#x25FF 
@@ -124,11 +132,44 @@ block aboutMe
                         li •	Update 4 different school websites with new content, using HTML and CSS. 
                         li •	Have worked on 2 projects which consisted of creating new websites with Drupal, CSS and HTML
                         li •	Use of JavaScript to make animations. 
+          
+            div(class = "columns" style = "padding-top: 30px;")
+              div(class = "column")
+                center
+                  div(class = "caja")
+                    div(class = "revelant-title")
+                      |SENIOR FRONT-END DEVELOPER
+                    img(src = "images/hack.png" style = "height: 295px; width: 400px;")
+                  button(class = "content")
+                   |More Info &#x25FF 
+                
+                  div(class = "accordion-appear")
+                      h1(style = "font-weight: bold;") 
+                        |October 2017 - June 2018
+                      ul
+                        li •	Update 4 different school websites with new content, using HTML and CSS. 
+                        li •	Have worked on 2 projects which consisted of creating new websites with Drupal, CSS and HTML
+                        li •	Use of JavaScript to make animations. 
 
-      div(class = "column is-2")
+              div(class = "column")
+                center
+                  div(class = "caja")
+                    div(class = "revelant-title")
+                      |WORKSHOP LEADER
+                    img(src = "images/acm.png" style = "height: 295px; width: 400px;")
+                  button(class = "content")
+                   |More Info &#x25FF 
+                
+                  div(class = "accordion-appear")
+                      h1(style = "font-weight: bold;") 
+                        |October 2017 - June 2018
+                      ul
+                        li •	Update 4 different school websites with new content, using HTML and CSS. 
+                        li •	Have worked on 2 projects which consisted of creating new websites with Drupal, CSS and HTML
+                        li •	Use of JavaScript to make animations. 
 
 
-    
+        
 
 
 //- FOOTER ---------------------------------------------- 

@@ -1,7 +1,17 @@
 var okay = document.getElementById("skill-level");
 
+var header = document.getElementById("skills");
+var btns = document.getElementsByClassName("skill");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 function javascript(){
-    okay.src = "/images/java.png";
+    okay.src = "/images/javaScript.png";
 }
 
 function python(){
@@ -21,11 +31,11 @@ function java(){
 }
 
 function sql(){
-    okay.src = "/images/java.png";
+    okay.src = "/images/sql.png";
 }
 
 function css(){
-    okay.src = "/images/sql.png";
+    okay.src = "/images/css.png";
 }
 
 function html(){
